@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: hsl(0, 36%, 70%);
+    }
+
+    h1.title{
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      font-weight: 300;
+      line-height: 4rem;
+    }
+
+    h1 span{
+      font-size: 4rem;
+      color: black;
+      font-weight: 400;
+    }
+
+    p{
+    margin-top: -4rem;
+    line-height: 2rem;
+    }
+
+    main.container{
+      display: grid;
+      place-items: center;
+    }
+
+    .card{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-left{
+      display: grid;
+      padding-top: 3.75rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    .hero{
+      display: grid;
+    }
+
+    footer{
+      display: none;
+    }
+
+    input[type=email]{
+      width: 95%;
+      padding: 1rem;
+      border: 1px solid hsl(0, 36%, 70%);
+      border-radius: 2rem;
+    }
+
+    input[type=button]{
+      background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      width: 15%;
+      padding: 1rem;
+      color: white;
+      border-radius: 2rem;
+       border: none;
+       margin-left: -70px;
+    }
+
+    form{
+      display: flex;
+      height: fit-content;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="card-left">
+        <img src="./images/logo.svg" alt="">
+
+        <div class="hero">
+          <h1 class="title">
+            We're <span> coming soon</span>
+          </h1>
+  
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+        </div>
+       
+
+        <form action="submit">
+          <input type="email" value="Email Address">
+          <input type="button" value=">">
+        </form>
+
+      </div>
+      <div class="card-right">
+        <img src="./images/hero-desktop.jpg" alt="">
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </main>
+
+  
+
+</body>
+</html>
